@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main</title>
+</head>
+
+<body>
+<!-- Nav Bar for About/Contact ETC -->
+    <nav class="nav_bar">
+        <h1 class="nav_bar_title">Bookshelf</h1>
+            <a id="nav_things1" href="about.html" target="_blank">ABOUT</a>
+            <a id="nav_things2" href="contact.html" target="_blank">CONTACT</a>
+    </nav>
+    
+<!-- Registration to show content -->
+    <section id="reg">
+        <h2>Login to see more:</h2>
+        <input  id="email" type="email" placeholder="Email">
+        <input  id="password" type="password" placeholder="Password">
+        <button id="subContent" type="submit">Submit</button>
+    </section>
+
+<!-- Section for inputting new book info -->
+    <section id="select" name="select">
+        <h2>Enter a new book:</h2>
+            <input id="author" type="value" placeholder="Enter an author:">
+            <input id="language" type="value" placeholder="Enter a language:">
+            <input id="subject" type="value" placeholder="Enter a subject:">
+            <input id="title" type="value" placeholder="Enter a title:">
+            <button id="selectButton" type="submit">Submit</button>
+    </section>
+
+<!-- Alphabetical sorting options -->
+    <label id="sort" for="sort">Sort Alphabetically: 
+        <select name="sort">
+            <option value="">Select:</option>
+            <option id="az" value="A-Z">A-Z</option>
+            <option id="za" value="Z-A">Z-A</option>
+        </select>
+    </label>
+
+<!-- Container for favorited books to go -->
+    <div id="favorited">Favorited Book:
+        <input id="favArea" type="text" placeholder="0">
+    </div>
+
+
+<!-- Need a wrapper / container for generated content -->
+    <div id="wrapper"></div>
+
+<!-- Footer because I wanted the site to look better -->
+    <footer>
+        <h2><a href="#">LinkdIn</a></h2>
+        <h2><a href="#">Twitter</a></h2>
+    </footer>
+
+<!-- Links to JavaScript files -->
+    <script type="module" src="js/bookSort.js"></script>
+    <script type="module" src="js/book-data.js"></script>
+</body>
+</html>

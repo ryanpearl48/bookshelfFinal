@@ -1,0 +1,163 @@
+/* Background color of body of page */
+body {
+    background-color: rgba(0, 0, 0, 0.138);
+}
+
+/* NAV bar setting */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 120px;
+    min-width: 100%;
+    margin-bottom: 12px;
+    background-color: gray;
+    box-shadow: 2px 6px 8px rgb(50, 45, 45);
+}
+
+/* Links to other pages */
+#nav_things1 {
+    position: absolute;
+    right: 150px;
+}
+#nav_things2 {
+    position: absolute;
+    right: 300px
+}
+
+/* Pseudo-Registration stuff */
+#reg {
+    max-width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 0 3px 3px 3px black;
+    background-color:rgb(151, 172, 192);
+    margin-left: 800px;
+}
+
+/* Used as NAV header */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+/* Used on "About me" and "Contact" pages */
+p {
+    margin-left: 480px;
+    text-align: center;
+    max-width: 800px;
+    padding: 3px;
+    border: 2px solid black;
+    /* used rgb color value */
+    box-shadow: 2px 4px 6px rgb(50, 45, 45);
+}
+
+/* Selecting multiple elements using id selectors */
+#favorited, #sort, #select {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#select > input {
+    height: 20px;
+    margin-top: 24px;
+    margin-right: 4px;
+}
+
+#selectButton {
+    height: 30px;
+/* Using the normal margin selector to flex */
+/* It goes top - right - bottom - left */
+    margin: 18px 0px 0px 5px;
+}
+
+/* Footer used on all pages */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    right: 200px;
+    max-width: 100%;
+    /* Used normal color value */
+    border-top: 2px solid black;
+    /* Used hexadecimal color value */
+    box-shadow: 6px, 6px, 6px #000000;
+    justify-content: center;
+}
+
+/* Special footer settings for "about me" and "contact" pages */
+.footah {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Exercising different CSS selectors. */
+footer > h2 > a {
+    color: #000000;
+    /* Getting rid of previously declared "a" border */
+    border: none;
+    padding-right: 200px;
+    margin-right: 180px;
+}
+
+/* Some fancy selector action */
+h2 > a:hover {
+    color: white;
+}
+
+/* Specific settings for links */
+a {
+    margin-left: 200px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 32px;
+    border: 2px solid black;
+}
+
+/* Selecting only the links within a nav because they're special */
+nav > a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Selecting all links */
+a:visited {
+    color: black;
+}
+/*-- End link settings --*/
+
+/*-- Generated book content --*/
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 3px 3px black;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 10px;
+}
+
+li > button {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.heartButt {
+    position: absolute;
+    margin-left: 800px;
+}
+
+
